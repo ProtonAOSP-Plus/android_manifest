@@ -10,17 +10,19 @@
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc-qpr3" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc-qpr3" />
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/12.1" />
+  <remote name="enh" fetch="https://github.com/ProtonEnhanced" revision="sc-v2" />
+  <remote name="enh-ssh" fetch="ssh://git@github.com/ProtonEnhanced" revision="sc-v2" />
 
   <!-- Remove existing repositories -->
   <remove-project name="platform/external/zlib" />
 
   <!-- Replace existing repositories -->
   <remove-project name="platform/frameworks/base" />
-  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="enh" groups="enh" />
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="platform/build" />
-  <project name="android_build_make" path="build/make" remote="proton" groups="proton">
+  <project name="android_build_make" path="build/make" remote="enh" groups="enh">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -57,11 +59,11 @@
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Launcher3" />
-  <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="enh" groups="enh" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="enh" groups="enh" />
   <remove-project name="platform/frameworks/native" />
   <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
   <remove-project name="platform/external/jemalloc_new" />
@@ -75,11 +77,11 @@
   <remove-project name="platform/packages/apps/Contacts" />
   <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Messaging" />
-  <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" remote="enh" groups="enh" />
   <remove-project name="platform/packages/apps/DeskClock" />
   <project name="android_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Dialer" />
-  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="enh" groups="enh" />
   <remove-project name="platform/packages/apps/Camera2" />
   <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" remote="proton" groups="proton" />
   <remove-project name="platform/external/openssh" />
