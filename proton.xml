@@ -9,6 +9,7 @@
   <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc-qpr3" />
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc-qpr3" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc-qpr3" />
+  <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/12.1" />
 
   <!-- Remove existing repositories -->
   <remove-project name="platform/external/zlib" />
@@ -156,4 +157,5 @@
   <project name="android_vendor_google_devices" path="vendor/google_devices" remote="blobs" groups="proton" />
   <project name="android_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="proton" groups="proton" />
   <project name="android_external_exfatprogs" path="external/exfatprogs" remote="proton" groups="proton" />
+  <project path="external/Camera" name="platform_external_Camera" remote="grapheneos" />
 </manifest>
