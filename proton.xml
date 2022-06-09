@@ -158,4 +158,5 @@
   <project name="android_packages_apps_GmsCompat" path="packages/apps/GmsCompat" remote="proton" groups="proton" />
   <project name="android_external_exfatprogs" path="external/exfatprogs" remote="proton" groups="proton" />
   <project path="external/Camera" name="platform_external_Camera" remote="grapheneos" />
+  <project path="external/Apps" name="platform_external_Apps" remote="grapheneos" />
 </manifest>
